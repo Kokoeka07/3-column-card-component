@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --very-light-gray : hsl(0, 0%, 95%);
+    --bright-orange : hsl(31, 77%, 52%);
+    --dark-cyan : hsl(184, 100%, 22%);
+    --very-dark-cyan : hsl(179, 100%, 13%);
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+    background-color: var(--very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.sec1 {
+    background-color: var(--bright-orange);
+    width: 340px;
+    height: 28em;
+    padding: 1rem;
+}
+
+.sec2 {
+    background-color: var(--dark-cyan);
+    width: 340px;
+    height: 28em;
+    padding: 1rem;
+}
+
+.sec3 {
+    background-color: var(--very-dark-cyan);
+    width: 340px;
+    height: 28em;
+    padding: 1rem;
+}
+
+.img1, .img2, .img3 {
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: var(--very-light-gray);
+    padding: 1rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--transparent-white);
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding-bottom: 2rem;
+}
+
+.b1 {
+    color: var(--bright-orange);
+    border-radius: 2rem;
+    border: none;
+    width: 8em;
+    height: 10%;
+    font-family: "Lexend Deca", sans-serif;
+    margin-left: 1rem;
+}
+
+.b2 {
+    color: var(--dark-cyan);
+    border-radius: 2rem;
+    border: none;
+    width: 8em;
+    height: 10%;
+    font-family: "Lexend Deca", sans-serif;
+    margin-left: 1rem;
+}
+
+.b3 {
+    color: var(--very-dark-cyan);
+    border-radius: 2rem;
+    border: none;
+    width: 8em;
+    height: 10%;
+    font-family: "Lexend Deca", sans-serif;
+    margin-left: 1rem;
+}
+
+.b1:hover, .b2:hover, .b3:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--transparent-white);
+    border: 2px solid var(--transparent-white);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 1440px) {
+    article {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 6rem;
+    }  
+}
+
